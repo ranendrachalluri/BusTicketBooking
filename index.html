@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Bus Ticket Booking System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #1d4ed8;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #dbeafe;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 15px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1e40af;
+        }
+
+        .bus-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .bus-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .bus-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .bus-card h2 {
+            color: #1d4ed8;
+            margin-bottom: 18px;
+        }
+
+        .bus-card p {
+            margin: 12px 0;
+            font-size: 15px;
+        }
+
+        .price {
+            color: #16a34a;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .seats {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Online Bus Ticket Booking</h1>
+        <p>Book Your Journey Easily and Comfortably</p>
+    </header>
+
+    <!-- Bus Details -->
+    <div class="container">
+
+        <h2 class="section-title">Available Buses</h2>
+
+        <div class="bus-container">
+
+            <!-- Bus 1 -->
+            <div class="bus-card">
+
+                <h2>Orange Travels</h2>
+
+                <p><strong>Source:</strong> Hyderabad</p>
+
+                <p><strong>Destination:</strong> Warangal</p>
+
+                <p><strong>Journey Date:</strong> 25-11-2026</p>
+
+                <p class="price">Ticket Price: ₹500</p>
+
+                <p class="seats">Available Seats: 20</p>
+
+                <button>Book Now</button>
+
+            </div>
+
+            <!-- Bus 2 -->
+            <div class="bus-card">
+
+                <h2>VRL Travels</h2>
+
+                <p><strong>Source:</strong> Hyderabad</p>
+
+                <p><strong>Destination:</strong> Karimnagar</p>
+
+                <p><strong>Journey Date:</strong> 26-11-2026</p>
+
+                <p class="price">Ticket Price: ₹650</p>
+
+                <p class="seats">Available Seats: 15</p>
+
+                <button>Book Now</button>
+
+            </div>
+
+            <!-- Bus 3 -->
+            <div class="bus-card">
+
+                <h2>Morning Star Travels</h2>
+
+                <p><strong>Source:</strong> Warangal</p>
+
+                <p><strong>Destination:</strong> Hyderabad</p>
+
+                <p><strong>Journey Date:</strong> 27-11-2026</p>
+
+                <p class="price">Ticket Price: ₹450</p>
+
+                <p class="seats">Available Seats: 10</p>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Online Bus Ticket Booking System</p>
+        <p>All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
